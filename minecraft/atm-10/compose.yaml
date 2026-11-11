@@ -23,6 +23,8 @@ services:
         Sushirolle3_0
       OPS: |
         FashleHD
+    networks:
+      - mc-router
     volumes:
       - data:/data
     labels:
@@ -37,3 +39,7 @@ services:
 
 volumes:
   data:
+
+networks:
+  mc-router:
+    external: true
